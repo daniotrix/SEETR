@@ -1,0 +1,53 @@
+<!-- Implementacion sign up con google, codigo para posible Implementacion -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro por Google</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="999087319266-8evs36v0av19u4dmrmmpqa6r20ormt1s.apps.googleusercontent.com">
+
+
+</head>
+
+<body> -->
+
+<!-- <img src="http://localhost:3000/imagen/usuarios/5c135fc548f3a216e49ca849-170.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJVU0VSX1JPTEUiLCJlc3RhZG8iOnRydWUsImdvb2dsZSI6ZmFsc2UsIl9pZCI6IjVjMTM1ZmM1NDhmM2EyMTZlNDljYTg0OSIsIm5vbWJyZSI6IkRhbmllbCBHYWxlYW5hIExvcGV6IiwiZW1haWwiOiJkYW5pbG9AZ21haWwuY29tIiwiX192IjowLCJpbWciOiI1YzEzNWZjNTQ4ZjNhMjE2ZTQ5Y2E4NDktMTcwLmpwZyJ9LCJpYXQiOjE1NDUzNzA2NDMsImV4cCI6MTU0NTU0MzQ0M30._pomou5-BF8v0kLcsXH2eCQrWS6a8fY5AAMT7e9mOO8" -->
+<!-- alt="">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function() {
+                console.log('User signed out.');
+            });
+        }
+    </script>
+
+
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log(id_token);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/google');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function() {
+                console.log('Signed in as: ' + xhr.responseText);
+            };
+            xhr.send('idtoken=' + id_token);
+        }
+    </script>
+</body>
+
+</html> -->
